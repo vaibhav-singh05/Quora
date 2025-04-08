@@ -10,7 +10,14 @@ from django.db.models import Q
 
 # Create your views here.
 def index(request):
-    questions = Question.objects.all().order_by('-date')
+    query = request.GET.get('q')
+    if query:
+        questions = Question.objects.filter(
+            Q(title__icontains=query) | Q(desc__icontains=query)
+        ).order_by('-date')
+    else:
+        questions = Question.objects.all().order_by('-date')
+
     return render(request, 'index.html', {'questions': questions})
 
 
@@ -166,13 +173,3 @@ def update_profile(request):
 
     return render(request, 'update_profile.html', {'user_profile': user_profile})
 
-def home(request):
-    query = request.GET.get('q')
-    if query:
-        questions = Question.objects.filter(
-            Q(title__icontains=query) | Q(desc__icontains=query)
-        ).order_by('-date')
-    else:
-        questions = Question.objects.all().order_by('-date')
-
-    return render(request, 'home.html', {'questions': questions})
