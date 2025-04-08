@@ -64,16 +64,6 @@ Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-## 📌 **Screenshots**
-
-### 🏠 Homepage
-![Homepage](screenshots/homepage.png)
-
-### 📝 Question Detail
-![Question Detail](screenshots/question_detail.png)
-
----
-
 ## 🧩 **Project Structure**
 ```
 quora/
