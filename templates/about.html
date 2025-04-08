@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+<div class="container">
+
+  <!-- Section 1 -->
+  <div class="row featurette d-flex justify-content-center align-items-center my-5">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">
+        What is Our Q&A Platform?
+        <span class="text-body-secondary">Real Questions. Real Answers.</span>
+      </h2>
+      <p class="lead">
+        This platform is built for curious minds and knowledge seekers. Whether you're a student, a professional, or just someone who loves to learn — you can ask any question and get helpful answers from the community. No question is too small, and every answer makes someone smarter.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/about1.jpg' %}" class="img-fluid rounded shadow" width="400" height="400" alt="Q&A Intro">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- Section 2 -->
+  <div class="row featurette d-flex justify-content-center align-items-center my-5">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">
+        Powered by the Community
+        <span class="text-body-secondary">Everyone is a Teacher & a Learner.</span>
+      </h2>
+      <p class="lead">
+        Our platform thrives on the knowledge shared by users like you. You can contribute by answering questions in your field of interest, sharing personal experiences, or even guiding someone stuck in their studies or career. It’s more than a website — it’s a learning revolution powered by people.
+      </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static 'img/about2.jpg' %}" class="img-fluid rounded shadow" width="400" height="400" alt="Community Power">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- Section 3 -->
+  <div class="row featurette d-flex justify-content-center align-items-center my-5">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">
+        Free. Fast. Accessible.
+        <span class="text-body-secondary">Learning Has No Limits.</span>
+      </h2>
+      <p class="lead">
+        No subscriptions, no hidden costs. Just a clean platform where learning is open for everyone. Ask a question, get an answer, or explore what's already out there. All for free. No barriers. Just honest knowledge exchange for everyone, everywhere.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/about3.jpg' %}" class="img-fluid rounded shadow" width="400" height="400" alt="Free Learning">
+    </div>
+  </div>
+
+</div>
+{% endblock body %}
