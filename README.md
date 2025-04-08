@@ -10,7 +10,7 @@ This is a **Quora-style Question & Answer Website** built using **Django**. User
 ---
 
 ## 🚀 GitHub Link
-The source code is hosted at: [https://github.com/vaibhav-singh05/quora-clone](https://github.com/vaibhav-singh05/quora-clone)
+The source code is hosted at: [https://github.com/vaibhav-singh05/quora](https://github.com/vaibhav-singh05/quora)
 
 ---
 
