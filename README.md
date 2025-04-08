@@ -10,7 +10,7 @@ This is a **Quora-style Question & Answer Website** built using **Django**. User
 ---
 
 ## 🚀 Live API Link  
-The API is deployed at: []()
+The API is deployed at: [https://quora-phjc.onrender.com](https://quora-phjc.onrender.com)
 
 ---
 
